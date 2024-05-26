@@ -106,7 +106,7 @@ void InitializeLogFile()
     char tempPath[MAX_PATH];                                                                    // Declare var that holds temp path
     char fileName[11] = "mk_log.txt";                                                           // Declare file name of log
 
-    DWORD tempPathLen = GetTempPathA(MAX_PATH, tempPath);                                       // Retrieve path to the temp folder                                                                         // Length of the temp path
+    DWORD tempPathLen = GetTempPathA(MAX_PATH, tempPath);                                       // Retrieve path to the temp folder
     if (tempPathLen == 0)                                                                       // Check if temp path was retrieved correcty
     {
         puts("Temp path couldn't be determined");
